@@ -1,0 +1,63 @@
+body, html {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    justify-content: center;
+    background-color: #6dadbf;
+}
+
+
+.boxtext {
+    background-color: rgb(235, 235, 235);
+    border: solid #6dadbf 3px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+ 
+}
+
+
+.itemh2 {
+    margin: 10px;
+    color: #6dadbf;
+    font-size: 35px;
+}
+
+.itemp {
+    line-height: 1.8;
+    font-style: italic;
+    margin: 20px 0 0;
+    width: 300px;
+    margin: 10px;
+    
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin: 10px;
+}
+
+.allcontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */ 
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    
+
+}
+
+@media (max-width: 360px) {
+    .allcontent {
+      grid-template-columns: 1fr; /* Один столбец */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .itemp {
+        width: 190px;
+    }
+  }
